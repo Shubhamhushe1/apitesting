@@ -1,0 +1,13 @@
+<form>
+
+    <label for="adminEmail">Admin Email:</label><br>
+    <input type="email" id="adminEmail" name="adminEmail" [(ngModel)]="admin.adminEmail"><br><br>
+    
+    <label for="adminPassword">Admin Password</label><br>
+    <input type="text" id="adminPassword" name="adminPassword" [(ngModel)]="admin.password"><br><br> 
+   
+    <label for="mobile">Mobile</label><br>
+    <input type="text" id="mobile" name="mobile" [(ngModel)]="admin.mobile"><br><br> 
+    
+    <input type="button" value="Submit" (click)="insertAdmin()">
+</form>

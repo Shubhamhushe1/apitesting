@@ -1,0 +1,15 @@
+<form>
+    <label for="companyName">Company Name:</label><br>
+    <input type="text" id="companyName" name="companyName" [(ngModel)]="company.companyName"><br><br>
+    
+    <label for="numberOfEmployees">Number of Employees:</label><br>
+    <input type="text" id="numberOfEmployees" name="numberOfEmployees" [(ngModel)]="company.numberOfEmployees"><br><br>
+    
+    <label for="companyEmail">Company Email:</label><br>
+    <input type="email" id="companyEmail" name="companyEmail" [(ngModel)]="company.companyEmail"><br><br>
+    
+    <label for="gstNumber">GST Number:</label><br>
+    <input type="text" id="gstNumber" name="gstNumber" [(ngModel)]="company.gstNumber"><br><br> 
+    
+    <input type="button" value="Submit" (click)="addCompany()">
+</form>
