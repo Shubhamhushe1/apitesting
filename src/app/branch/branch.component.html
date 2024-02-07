@@ -1,0 +1,21 @@
+<form>
+    <label for="branchName">Branch Name:</label><br>
+    <input type="text" id="branchName" name="branchName" [(ngModel)]="branch.officeName"><br><br>
+    
+    <label for="branchLocation">Branch Location:</label><br>
+    <input type="text" id="branchLocation" name="branchLocation" [(ngModel)]="branch.officeLocation"><br><br>
+    
+    <label for="phoneNumber">Phone Number:</label><br>
+    <input type="tel" id="phoneNumber" name="phoneNumber" [(ngModel)]="branch.officeNumber"><br><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" [(ngModel)]="branch.officeEmail"><br><br>
+
+    <label for="inTime">In Time:</label><br>
+    <input type="datetime-local" id="inTime" name="inTime" [(ngModel)]="branch.inTime"><br><br>
+    
+    <label for="outTime">Out Time:</label><br>
+    <input type="datetime-local" id="outTime" name="outTime" [(ngModel)]="branch.outTime"><br><br>
+    
+    <input type="button" value="Submit" (click)="addNewBranch()">
+</form>
